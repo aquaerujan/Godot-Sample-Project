@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://dx1lpuu8vcr18"]
+
+[ext_resource type="PackedScene" uid="uid://dcuv3u0c7vnoe" path="res://Scenes/ball.tscn" id="1_3lch1"]
+[ext_resource type="PackedScene" uid="uid://bn16flooxhfse" path="res://Scenes/paddle.tscn" id="2_awa45"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_viea0"]
+size = Vector2(500, 20)
+
+[node name="World" type="Node2D"]
+
+[node name="Ball" parent="." instance=ExtResource("1_3lch1")]
+position = Vector2(250, 150)
+
+[node name="Paddle_Left" parent="." instance=ExtResource("2_awa45")]
+position = Vector2(30, 150)
+
+[node name="Paddle_Right" parent="." instance=ExtResource("2_awa45")]
+position = Vector2(470, 150)
+control_up = "right_up"
+control_down = "right_down"
+
+[node name="Wall" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall"]
+position = Vector2(250, -10)
+shape = SubResource("RectangleShape2D_viea0")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Wall"]
+position = Vector2(250, 310)
+shape = SubResource("RectangleShape2D_viea0")

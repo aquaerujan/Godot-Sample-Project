@@ -1,7 +1,12 @@
 2a60927148abd1d33b818b535e306557
-::res://::1680416872
+::res://::1684399744
 icon.svg::CompressedTexture2D::5594198052072846758::1680416787::1680416794::1::::<><>::
-::res://Assets/::1680416897
+::res://Assets/::1680416939
 Ball.png::CompressedTexture2D::6549129617739167391::1680168175::1680416939::1::::<><>::
 Paddle.png::CompressedTexture2D::6022424451277592714::1680168175::1680416939::1::::<><>::
-::res://Scenes/::1680416872
+::res://Scenes/::1680426063
+ball.gd::GDScript::-1::1680424122::0::1::::<>CharacterBody2D<>::
+ball.tscn::PackedScene::7342253441735584060::1680426063::0::1::::<><>::uid://c0kphcn3irp2f<>res://Scenes/ball.gd
+paddle.gd::GDScript::-1::1680423414::0::1::::<>CharacterBody2D<>::
+paddle.tscn::PackedScene::3354441228389587684::1680426063::0::1::::<><>::res://Scenes/paddle.gd<>uid://cr2kplfidp3bq
+world.tscn::PackedScene::8827975033079229145::1680426063::0::1::::<><>::uid://dcuv3u0c7vnoe<>uid://bn16flooxhfse
